@@ -11,16 +11,34 @@ package crowdfounding1;
  */
 public class Usuario {
    
-    private Persona persona=new Persona();
+    
     private int dinero;
     private String Contrasena;
     private String username;
+    private String nombre;
+ private int cedula;
+ private int telefono;
 
-    public Usuario(int dinero, String Contrasena, String username) {
+    public Usuario(int dinero, String Contrasena, String username, String nombre, int cedula, int telefono) {
         this.dinero = dinero;
         this.Contrasena = Contrasena;
         this.username = username;
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.telefono = telefono;
     }
+
+    public Usuario(int dinero, String Contrasena, String username, String nombre, int cedula) {
+        this.dinero = dinero;
+        this.Contrasena = Contrasena;
+        this.username = username;
+        this.nombre = nombre;
+        this.cedula = cedula;
+    }
+
+   
+
+    
 
     public int getDinero() {
         return dinero;
@@ -44,6 +62,30 @@ public class Usuario {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
+    }
+
+    public int getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(int telefono) {
+        this.telefono = telefono;
     }
     
     
